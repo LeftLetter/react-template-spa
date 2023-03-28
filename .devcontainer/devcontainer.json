@@ -1,5 +1,5 @@
 {
-  "name": "vscode-react-template",
+  "name": "react-template-spa",
   "dockerFile": "./Dockerfile",
   "shutdownAction": "none",
   "customizations": {
@@ -7,7 +7,6 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "styled-components.vscode-styled-components",
         "eamodio.gitlens",
         "mhutchie.git-graph",
         "ritwickdey.liveserver"
@@ -39,6 +38,6 @@
     }
   },
   "mounts": [
-    "source=vscode-react-template-node-modules,target=/workspaces/vscode-react-template/node_modules,type=volume"
+    "source=react-template-spa,target=/workspaces/react-template-spa/node_modules,type=volume"
   ]
 }
