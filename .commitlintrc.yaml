@@ -1,4 +1,5 @@
 extends:
   - "@commitlint/config-conventional"
 rules:
+  # 日本語が打てなくなるためオフ
   subject-case: [0]
