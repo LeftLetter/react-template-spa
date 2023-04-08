@@ -19,6 +19,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
+    "@markuplint/jsx-parser": "^3.6.1",
+    "@markuplint/react-spec": "^3.6.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
@@ -28,6 +30,7 @@
     "eslint-config-react-app": "^7.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
+    "markuplint": "^3.6.1",
     "prettier": "^2.8.7",
     "prettier-plugin-md-nocjsp": "^1.5.1",
     "typescript": "^4.9.5",

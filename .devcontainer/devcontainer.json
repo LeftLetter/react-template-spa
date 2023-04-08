@@ -9,7 +9,8 @@
         "esbenp.prettier-vscode",
         "eamodio.gitlens",
         "mhutchie.git-graph",
-        "ritwickdey.liveserver"
+        "ritwickdey.liveserver",
+        "yusukehirao.vscode-markuplint"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
