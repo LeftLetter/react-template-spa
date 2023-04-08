@@ -26,13 +26,6 @@
         "[jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode",
           "editor.formatOnSave": true
-        },
-        "[markdown]": {
-          "editor.formatOnSave": false
-        },
-        "[html]": {
-          "editor.defaultFormatter": "esbenp.prettier-vscode",
-          "editor.formatOnSave": true
         }
       }
     }
