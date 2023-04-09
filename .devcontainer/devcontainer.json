@@ -10,7 +10,8 @@
         "eamodio.gitlens",
         "mhutchie.git-graph",
         "ritwickdey.liveserver",
-        "yusukehirao.vscode-markuplint"
+        "yusukehirao.vscode-markuplint",
+        "ms-vscode.js-debug-nightly"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
