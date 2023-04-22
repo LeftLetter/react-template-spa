@@ -1,0 +1,85 @@
+swagger: '2.0'
+info:
+  description: ''
+  version: '1.0.0'
+  title: 'Simulation API'
+schemes:
+  - 'https'
+  - 'http'
+paths:
+  /problem:
+    get:
+      summary: 'Get problem list'
+      description: ''
+      operationId: 'getProblem'
+      produces:
+        - 'application/json'
+      responses:
+        '200':
+          description: 'Successful operation'
+          schema:
+            type: 'array'
+            items:
+              type: 'object'
+              properties:
+                id:
+                  type: 'string'
+                name:
+                  type: 'string'
+              required:
+                - 'id'
+                - 'name'
+        '500':
+          description: 'Unknown error'
+  /simulation:
+    get:
+      summary: 'Get simulation result'
+      description: ''
+      operationId: 'getSimulation'
+      consumes:
+        - 'application/json'
+      produces:
+        - 'application/json'
+      parameters:
+        - in: 'body'
+          name: 'body'
+          description: ''
+          required: true
+          schema:
+            type: 'object'
+            properties:
+              genetarion:
+                type: 'number'
+              population:
+                type: 'number'
+              problem:
+                type: 'string'
+            required:
+              - 'genetarion'
+              - 'population'
+              - 'problem'
+      responses:
+        '200':
+          description: 'successful operation'
+          schema:
+            type: 'object'
+            properties:
+              result:
+                type: 'number'
+              individuals:
+                type: 'array'
+                items:
+                  type: 'object'
+                  properties:
+                    x:
+                      type: 'number'
+                    y:
+                      type: 'number'
+                  required:
+                    - 'x'
+                    - 'y'
+            required:
+              - 'result'
+              - 'individuals'
+        '400':
+          description: 'Invalid input'
