@@ -9,6 +9,11 @@ export const en = {
       populationSize: 'Population size',
       problem: 'Problem',
       submit: 'Submit',
+      validation: {
+        generation: 'Set a value between 2 and 500.',
+        populationSize: 'Set a value between 2 and 500.',
+        problem: 'Please select one of the options.',
+      },
     },
   },
 }
