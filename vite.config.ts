@@ -5,5 +5,5 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
-  server: { hmr: { port: 51730 } },
+  server: { hmr: { port: 51730, host: 'localhost' }, host: 'localhost' },
 })
