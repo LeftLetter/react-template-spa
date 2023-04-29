@@ -11,7 +11,9 @@
         "mhutchie.git-graph",
         "ritwickdey.liveserver",
         "yusukehirao.vscode-markuplint",
-        "ms-vscode.js-debug-nightly"
+        "ms-vscode.js-debug-nightly",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
