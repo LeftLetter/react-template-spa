@@ -16,4 +16,10 @@ export const ja = {
       },
     },
   },
+  history: {
+    title: 'シミュレーション履歴',
+  },
+  add: {
+    title: '問題追加',
+  },
 }

@@ -1,11 +1,36 @@
-import { Navbar } from '@mantine/core'
+import { pathName } from '@/config/path'
+import { Drawer, NavLink, Navbar } from '@mantine/core'
 import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-export const AppNavbar: FC = () => {
+export type AppNavbarType = {
+  opened: boolean
+  onClose: () => void
+}
+
+export const AppNavbar: FC<AppNavbarType> = ({ opened, onClose }) => {
+  const { t } = useTranslation()
+
   return (
-    <Navbar width={{ base: 300 }} p="xs">
-      <Link to="/about">About</Link>
-    </Navbar>
+    <Drawer opened={opened} onClose={onClose}>
+      <Navbar.Section onClick={onClose}>
+        <Link to={pathName.simulation}>
+          <NavLink label={t('simulation.title')} />
+        </Link>
+      </Navbar.Section>
+
+      <Navbar.Section onClick={onClose}>
+        <Link to={pathName.history}>
+          <NavLink label={t('history.title')} />
+        </Link>
+      </Navbar.Section>
+
+      <Navbar.Section onClick={onClose}>
+        <Link to={pathName.add}>
+          <NavLink label={t('add.title')} />
+        </Link>
+      </Navbar.Section>
+    </Drawer>
   )
 }

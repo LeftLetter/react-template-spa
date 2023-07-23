@@ -16,6 +16,10 @@ export const router = createBrowserRouter([
         element: <SimulationPage />,
       },
       {
+        path: pathName.simulation,
+        element: <SimulationPage />,
+      },
+      {
         path: pathName.history,
         element: <HistoryPage />,
       },

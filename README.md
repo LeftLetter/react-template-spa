@@ -18,6 +18,10 @@ npm run test
 npm run test-storybook
 ```
 
+### Adding component and story
+
+### Generating mock and type
+
 ## Libraries
 
 ### Project Configuration
